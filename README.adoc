@@ -1,0 +1,54 @@
+== `make-deedpoll`
+
+:deed-poll: https://www.gov.uk/change-name-deed-poll[deed poll]
+:latexmk: https://ctan.org/pkg/latexmk[latexmk]
+
+
+=== Intro
+
+`make-deedpoll` consists of a LaTeX template file and a shell script that uses
+{latexmk} to generate a {deed-poll}, used to change your name in the UK.
+
+While it is not strictly _necessary_, this template generates a deed poll that
+expects to be signed by two witnesses.
+
+It's recommended to print and have witnessed several "original copies" of a
+deed poll so that you have backups in case your bank, the DVLA, or the Home
+Office decide they'd like to keep it. It's also probably a good idea to get a
+driver's licence or passport with your new name before attempting to change any
+information with banks and other similar entities, as they appear to be overly
+picky with some people.
+
+
+=== Other Notes
+
+There is a line that is always included in this deed poll, though it may not
+always be necessary. The line in question is:
+
+[quote, deed-poll-template.tex, "Lines 120-122"]
+____
+Notwithstanding the decision of Mr Justice Vaisey in _Re_ Parrott, Cox _v_
+Parrott [1946] Ch 183, the applicant wishes the enrolment to proceed.
+____
+
+The decision of Mr Justice Vaisey was the following:
+
+[quote, Mr Justice Vaisey, "Re Parrott, Cox v Parrott [1946] Ch 183"]
+____
+There are only two, or at most three, ways in which a Christian name may be
+legally changed.  First, it may be assumed, by the omni-competence of an Act of
+Parliament, as, for example, the Baines Name Act, 1907.  Secondly, at
+confirmation, as explained in Phillimore’s Ecclesiastical Law, 2nd ed., vol.
+I., at p. 517, where the following passage from Coke’s Institutes I, 3a, is
+cited: "If a man be baptized by the name of Thomas, and, after, at his
+confirmation by the bishop, he is named John, he may purchase by the name of
+his confirmation.  And this was the case of Sir Francis Gawdie, chief justice
+of the Court of Common Pleas, whose name by baptism was Thomas, and his name of
+confirmation Francis; and that name of Francis, by the advice of all the
+judges, in anno 36 Hen. 8, he did bear, and after use in all his purchases and
+grants."
+____
+
+As far as I understand, this particular judgement is now essentially ignored.
+However, as case law is case law, it's likely wise to explicitly request that
+this judgement be ignored.

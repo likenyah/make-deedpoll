@@ -1,6 +1,7 @@
 *
 !.gitignore
 !LICENSE
-!README.md
-!deed-poll.tex
+!Makefile
+!README.adoc
+!deed-poll-template.tex
 !make-deedpoll

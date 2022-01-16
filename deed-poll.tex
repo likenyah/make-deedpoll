@@ -1,0 +1,161 @@
+% deed-poll.tex
+% -----------------------------------------------------------------------------
+
+\documentclass[10pt, twoside, a4paper]{article}
+
+\usepackage{polyglossia}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\usepackage[UKenglish]{isodate}
+\usepackage{datetime}
+\usepackage{multicol}
+\usepackage{nth}
+\usepackage{parskip}
+
+\setdefaultlanguage[variant = uk]{english}
+\geometry{inner=20mm, outer=20mm, bottom=20mm, top=20mm}
+
+\hypersetup{
+	pdfkeywords = deed poll change of name uk,
+	pdfsubject = Deed Poll,
+	pdftitle = Deed of Change of Name
+}
+
+\newcommand{\city}{CITY}
+\newcommand{\county}{COUNTY}
+\newcommand{\newname}{\textbf{NEW NAME}}
+\newcommand{\oldname}{\textbf{OLD NAME}}
+\newcommand{\postcode}{POSTCODE}
+\newcommand{\streetaddress}{ADDRESS}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+{
+	\centering
+	\LARGE
+	\scshape
+	Deed of Change of Name
+	\vspace{10pt}
+	\hrule
+	\par
+}
+
+\vspace{30pt}
+
+\textsc{By this Deed of Change of Name} made by myself the undersigned
+\newname{} of \streetaddress{}, \city{}, \postcode{}, in the county of
+\county{}, formerly known as \oldname{}, a British Citizen under section 1(1)
+of the British Nationality Act 1981, I hereby declare as follows:
+
+\vspace{20pt}
+
+\makebox[4em]{\bfseries \large I.}
+\textsc{I absolutely} and entirely renounce, relinquish, and abandon the use of
+my said former name \oldname{} and assume, adopt, and determine to take and use
+from the date hereof the name of \newname{} in substitution for my former name
+of \oldname{}.
+
+\vspace{20pt}
+
+\makebox[4em]{\bfseries \large II.}
+\textsc{I shall at all times} hereafter in all records, deeds, documents, and
+other writings and in all actions and proceedings, as well as in all dealings
+and transactions, and on all occasions whatsoever use and subscribe the said
+name of \newname{} as my name, in substitution for my former name of \oldname{}
+so relinquished as aforesaid to the intent that I may hereafter be called,
+known, or distinguished not by the former name of \oldname{} but by the name
+\newname{}.
+
+\vspace{20pt}
+
+\makebox[4em]{\bfseries \large III.}
+\textsc{I authorise and require} all persons at all times to designate,
+describe, and address me by the adopted name of \newname{}.
+
+\vspace{20pt}
+
+\textsc{In witness} whereof I have hereunto subscribed my adopted and
+substituted name of \newname{} and also my said former name of \oldname{}.
+
+Notwithstanding the decision of Mr Justice Vaisey in \textit{Re} Parrott, Cox
+\textit{v} Parrott [1946] Ch 183, the applicant wishes the enrolment to
+proceed.
+
+\textsc{Signed as a Deed this \nth{\the\day} day of \monthname{} in the year
+{\the\year}. (\isodate{\today})}
+
+\vfill
+
+\centering
+\begin{minipage}{0.45\textwidth}
+	\hrule
+	\vspace{10pt}
+
+	{
+		\centering
+		\noindent
+		by the above name \newname{}
+		\par
+	}
+
+	\vspace{60pt}
+
+	\textsc{Witness 1}
+	\vspace{30pt}
+	\hrule
+
+	\vspace{20pt}
+
+	\textsc{Name}
+	\vspace{20pt}
+	\hrule
+
+	\vspace{20pt}
+
+	\textsc{Address}
+	\vspace{20pt}
+	\hrule
+	\vspace{20pt}
+	\hrule
+	\vspace{20pt}
+	\hrule
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.45\textwidth}
+	\hrule
+	\vspace{10pt}
+
+	{
+		\centering
+		\noindent
+		by the above name \oldname{}
+		\par
+	}
+
+	\vspace{60pt}
+
+	\textsc{Witness 2}
+	\vspace{30pt}
+	\hrule
+
+	\vspace{20pt}
+
+	\textsc{Name}
+	\vspace{20pt}
+	\hrule
+
+	\vspace{20pt}
+
+	\textsc{Address}
+	\vspace{20pt}
+	\hrule
+	\vspace{20pt}
+	\hrule
+	\vspace{20pt}
+	\hrule
+\end{minipage}
+
+\end{document}
